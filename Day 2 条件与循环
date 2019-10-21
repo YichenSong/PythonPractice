@@ -47,6 +47,11 @@ for x in range
 
 6. enumerate()
 给下标的序列。默认起始0
+####################
+for i, content in enumerate(contents,1):
+    print(i,content)
+#####################
+
 
 7. break, continue，同C
 
