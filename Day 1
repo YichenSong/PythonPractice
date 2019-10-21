@@ -1,0 +1,33 @@
+缩进 = 括号
+dir(__builtins__) : built-in function
+help(function)
+#： 注释
+‘’’ ‘’’   or “”” “””： 区间注释
+
+1.	变量
+使用变量需先赋值
+变量名命名规则，同
+变量名大小写敏感
++: num, char string： 运算，拼接
+‘’  “” 同
+转义 \’
+原始字符串 r‘string’
+长字符串 “”” ”””     ‘’’ ‘’’
+
+2.	运算符
++ - * /
+//  %  **
+>  <  ==  >=  <=  !=
+And  or  not （这么简单粗暴！）
+
+x,y = 1, 2
+small = x if x<y else y
+print(small)
+
+优先级
+
+3.	数据类型
+int  float  bool (True, False: 1, 0/0.0/NULL)
+type(x): 获取对象类型
+isinstance(x, type): 判断对象类型
+强制类型转换 int(), etc.
