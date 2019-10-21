@@ -11,7 +11,7 @@ elif = else if
 
 2. 循环语句
 while
-n++ 报错
+n++ 报错  
 
 
 3. 导入random模块
@@ -39,4 +39,17 @@ while (guess != secret and n < 8):
 print("end.")
 
 #########################################
+
+4. for语句
+for x in range
+
+5. range(start*(in),stop(ex),step)
+
+6. enumerate()
+给下标的序列。默认起始0
+
+7. break, continue，同C
+
+8. pass
+跳过某块
 
