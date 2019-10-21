@@ -42,8 +42,20 @@ print("end.")
 
 4. for语句
 for x in range
+print(value, end='\n')
 
 5. range(start*(in),stop(ex),step)
+
+
+###############
+for i in range(10):     # 无论如何i遍历range
+    if i%2 != 0:
+        print(i)
+        continue
+    i += 2
+    print(i)
+#######################
+
 
 6. enumerate()
 给下标的序列。默认起始0
