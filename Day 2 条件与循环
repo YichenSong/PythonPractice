@@ -1,0 +1,42 @@
+1.	条件语句 （依靠冒号 和 缩进。可以加括号，但不必须）
+if 语句
+为真时执行if后语句块，or跳过
+
+else 若if为假则执行else
+注意缩进
+
+elif = else if
+
+
+
+2. 循环语句
+while
+n++ 报错
+
+
+3. 导入random模块
+import
+randint(argMin,argMax)
+
+######################小甲鱼例题################
+import random
+secret = random.randint(1,10)
+
+temp = input("guess: ")
+guess = int(temp)
+n=1
+while (guess != secret and n < 8):
+    n = n + 1
+    temp = input("guess again: ")
+    guess = int(temp)
+    if guess == secret:
+        print("right!")
+    else:
+        if guess > secret:
+            print("Bitte kleiner!")
+        else:
+            print("Bitte groesser!")
+print("end.")
+
+#########################################
+
