@@ -58,3 +58,5 @@ for i, content in enumerate(contents,1):
 8. pass
 跳过某块
 
+9. assert expression
+when exp == False 报错
