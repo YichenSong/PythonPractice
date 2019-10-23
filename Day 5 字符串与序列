@@ -1,0 +1,70 @@
+1. python不区分字符与字符串
+字符串一旦定义不可修改，如元组，可拼接并重新命名覆盖
+可以切片
+调用单个字符可用下标
+操作同元组
+
+2. 字符串的其他操作（返回新的字符串）
+  str1.capitalize(): 首字母大写
+  str1.casefold(): 全部小写
+  str1.center(width):居中
+  str1.count(substr,[startindex, endindex]):子字符串出现次数
+  str1.endswith(substr,[S,E]):是否以子字符串结尾
+  str1.expandtabs():把\t转化为空格，从第一个字符起默认8位，
+  str1.find(sub,[]):搜索第一个，找不到返回-1
+  rfind()：右侧查找
+  str1.index():同上，找不到会产生异常
+  isalnum():全是字母或数字，且至少有一个
+  isalpha()
+  isdecimal()
+  isdigit()
+  islower()
+  isnumeric()
+  isspace()
+  istitle():单词首字母大写其余小写
+  isupper()
+  join():以字符串作为分隔符分隔所有字符
+  ljust(width):左对齐
+  rjust(width):右对齐
+  lower():所有大写转小写
+  upper()
+  lstrip():去掉左边所有空格
+  rstrip()：去掉右边所有空格
+  partition(sub):以sub将str隔成三个元素的元组
+  rpartition()
+  replace(old,new,[count]):不超过count次替换
+  split([none],[count]):默认空格，以sub切割字符串，返回列表。sub被切掉
+  splitlines([keepends]):切\n前keepdends行
+  startswith(sub,[S,E])
+  strip([sub]):去掉前后空格(默认)。去掉前后sub
+  swapcase()：大小写交换
+  title()：所有单词首字母大写其余小写
+  str7.translate(str.maketrans('sub1','sub2'))：替换，二者需等长
+  zfill(width):字符串右对齐，左侧用0填充。
+
+isdigit()
+True: Unicode数字，byte数字（单字节），全角数字（双字节），罗马数字
+False: 汉字数字
+Error: 无
+
+isdecimal()
+True: Unicode数字，，全角数字（双字节）
+False: 罗马数字，汉字数字
+Error: byte数字（单字节）
+
+isnumeric()
+True: Unicode数字，全角数字（双字节），罗马数字，汉字数字
+False: 无
+Error: byte数字（单字节）
+
+2. format
+"{0} wefa {1}.{2}".format("I","woeif","com")
+>>>I wefa woeif.com
+
+位置参数可用关键字代替
+:.1f 格式化
+
+格式化字符串
+%c 格式化字符及其ASCII码
+"%c %c %c" % (97,98,99)
+ 
