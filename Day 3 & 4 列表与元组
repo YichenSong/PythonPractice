@@ -1,0 +1,88 @@
+0. 数组
+同种类型
+
+1. 列表list[]
+啥都可以放 
+x = []  空列表
+
+2. 添加元素
+x.append() 单一 末尾
+长度 len(x)
+x. extend([]) 多个，末尾， 用一个列表扩展另一个列表
+x.insert(index, object) 从0开始
+
+3. 从列表中获取元素
+x[index]
+
+4. 删除元素
+x.remove(object) 知道名字，不需知道位置
+del语句:  del x[index]
+del x :  整个列表删除
+pop() 从列表中取出最后一个元素并返回
+x.pop() 可以赋值给某变量
+也可加index x.pop(index)
+
+5.列表分片 slice
+listname[indexStart: indexEnd] 含前不含后。原列表不变
+listname[:] 原列表的拷贝 
+  如果 list1 = list，则对list进行的任何操作list1也会变化，因为只是名字变化
+
+6.列表的操作符
+比较，从头依次比较
+可以用+拼接多个列表 但不能添加新元素。不用。拼接应使用extend
+可以用*复制  
++= *= 原地改变
+成员关系操作符   in/not in 返回 T/F
+  只影响一层，列表中的列表中的元素，不能判断   object in list[index]即可判断
+list的内置函数  dir(list)
+eg. list.count(object) 某元素在list中出现多少次
+    list.index(object, [indexStart, indexEnd]) 某元素在list第一次出现的位置
+    list.reverse() 翻转，改变原列表
+    list.sort([reverse=false(default)]) 从小到大 改变原列表
+    
+=====================================================================
+7. 元组tuple()
+不可改变 不可原地操作
+
+tuple1 = (2,5,32,3)
+tuple[2]
+tuple[:2]
+
+创建元组
+temp = 1,2,3
+temp = (1,)
+temp = 1,
+temp = () 空元组
+8 * (8) : 65
+8 * (8, ) : (8, 8, 8, 8, 8, 8, 8, 8)  重复
+更新和删除元组
+  temp = ('haha', 'lala', 'baba')
+  temp = temp[:2] + ('Oh',) + temp[2:]
+  temp 更新 原元组无标签一段时间之后被回收
+del temp  不常用
+
+8. 元组的操作符
++拼接
+*重复
+> < == 关系
+and or not 逻辑
+成员关系 in/ not in
+
+count index操作
+
+9. 解压元组（根据元组结构定义变量）
+t = (1, 10.31, 'python')
+(a, b, c) = t
+print(a, b, c)
+
+t = (1, 10.31, ('OK', 'python'))
+(a, b, (c, d)) = t
+print(a, b, c, d)
+
+通配符[*] wildcard
+t = 1, 2, 3, 4, 5
+a, b, *rest, c = t
+print(a, b, c)  # 1 2 5
+print(rest)  # [3, 4]
+如果不在意rest，直接命名为_即可。但_是存在的
+
