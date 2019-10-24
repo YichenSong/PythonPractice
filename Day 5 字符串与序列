@@ -76,3 +76,19 @@ m.n m最小总宽度，n小数点后位数
 0显示数字前填充0
 
 转义字符
+
+
+
+3. 序列
+list() 转化为列表
+tuple()
+str()
+len()
+max() 数据类型必须统一
+min()
+sum()  iterable和可选参数的总和
+sorted()    list.sort()
+reversed()    list(reversed(name))
+enumerate(name) 给下标的列表
+zip(a,b) 两个列表打包配对为元组。多的不匹配。
+a, b = zip(*c) 元组解压为两个列表
